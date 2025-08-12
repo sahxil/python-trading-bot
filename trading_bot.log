@@ -256,3 +256,413 @@ ValueError: Environment variable BINANCE_API_KEY is required
 2025-08-12 23:36:26,753 - root - INFO - --- Exit Test Successful ---
 2025-08-12 23:36:26,753 - root - INFO - 
 >>> Full Trade Lifecycle Test Complete <<<
+2025-08-12 23:42:39,116 - root - INFO - Starting bot and web server...
+2025-08-12 23:42:39,127 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.8:5000
+2025-08-12 23:42:39,127 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 23:42:40,154 - root - INFO - Binance client initialized and connection successful.
+2025-08-12 23:42:40,803 - root - INFO - Retrieved precision for BTCUSDT: 3 decimal places.
+2025-08-12 23:42:40,804 - root - INFO - Bot thread started. Trading BTCUSDT.
+2025-08-12 23:42:41,490 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.45
+2025-08-12 23:42:41,490 - root - INFO -   RSI: HOLD (conf: 0.08)
+2025-08-12 23:42:41,490 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-12 23:42:47,587 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\app.py", line 12, in dashboard
+    return render_template('dashboard.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: dashboard.html
+2025-08-12 23:42:47,590 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 23:42:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-12 23:42:48,089 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 23:42:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-12 23:42:56,538 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\app.py", line 12, in dashboard
+    return render_template('dashboard.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: dashboard.html
+2025-08-12 23:42:56,540 - werkzeug - INFO - 192.168.1.8 - - [12/Aug/2025 23:42:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-12 23:42:57,263 - werkzeug - INFO - 192.168.1.8 - - [12/Aug/2025 23:42:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-12 23:43:18,160 - app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\app.py", line 12, in dashboard
+    return render_template('dashboard.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahil\VSCodeProjects\Python Trading Bot\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: dashboard.html
+2025-08-12 23:43:18,162 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 23:43:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-12 23:45:29,623 - root - INFO - Starting bot and web server...
+2025-08-12 23:45:29,632 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.8:5000
+2025-08-12 23:45:29,632 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 23:45:31,039 - root - INFO - Binance client initialized and connection successful.
+2025-08-12 23:45:31,730 - root - INFO - Retrieved precision for BTCUSDT: 3 decimal places.
+2025-08-12 23:45:31,731 - root - INFO - Bot thread started. Trading BTCUSDT.
+2025-08-12 23:45:32,722 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.47
+2025-08-12 23:45:32,723 - root - INFO -   RSI: HOLD (conf: 0.12)
+2025-08-12 23:45:32,723 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-12 23:45:33,722 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 23:45:33] "GET / HTTP/1.1" 200 -
+2025-08-12 23:46:33,766 - root - INFO - Ensemble Analysis: SELL | Confidence: 0.58
+2025-08-12 23:46:33,766 - root - INFO -   RSI: HOLD (conf: 0.29)
+2025-08-12 23:46:33,766 - root - INFO -   MACD: SELL (conf: 1.00)
+2025-08-12 23:47:34,492 - root - INFO - Ensemble Analysis: BUY | Confidence: 0.47
+2025-08-12 23:47:34,492 - root - INFO -   RSI: HOLD (conf: 0.12)
+2025-08-12 23:47:34,492 - root - INFO -   MACD: BUY (conf: 1.00)
+2025-08-12 23:47:34,492 - root - INFO - >>> BUY Signal Detected. Entering position. <<<
+2025-08-12 23:47:34,989 - root - INFO - Risk-adjusted position size: 0.002481 ($297.49 max risk)
+2025-08-12 23:47:34,989 - root - INFO - Original quantity: 0.0024812174857877754, Rounded quantity: 0.002
+2025-08-12 23:47:34,990 - root - INFO - Placing MARKET order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
+2025-08-12 23:47:35,502 - root - INFO - Order placed successfully: 5574777073
+2025-08-12 23:47:35,502 - root - INFO - Position opened: LONG 0.002 BTCUSDT at 119897.60402174
+2025-08-12 23:48:36,519 - root - INFO - Ensemble Analysis: BUY | Confidence: 0.47
+2025-08-12 23:48:36,520 - root - INFO -   RSI: HOLD (conf: 0.12)
+2025-08-12 23:48:36,520 - root - INFO -   MACD: BUY (conf: 1.00)
+2025-08-12 23:49:37,262 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.49
+2025-08-12 23:49:37,262 - root - INFO -   RSI: HOLD (conf: 0.16)
+2025-08-12 23:49:37,263 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-12 23:50:28,389 - root - INFO - Starting bot and web server...
+2025-08-12 23:50:28,403 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.8:5000
+2025-08-12 23:50:28,404 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 23:50:29,866 - root - INFO - Binance client initialized and connection successful.
+2025-08-12 23:50:30,534 - root - INFO - Retrieved precision for BTCUSDT: 3 decimal places.
+2025-08-12 23:50:30,535 - root - INFO - Bot thread started. Trading BTCUSDT.
+2025-08-12 23:50:31,497 - root - INFO - Ensemble Analysis: SELL | Confidence: 0.47
+2025-08-12 23:50:31,497 - root - INFO -   RSI: HOLD (conf: 0.12)
+2025-08-12 23:50:31,497 - root - INFO -   MACD: SELL (conf: 1.00)
+2025-08-12 23:50:33,730 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 23:50:33] "GET / HTTP/1.1" 200 -
+2025-08-12 23:50:34,022 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 23:50:34] "GET /socket.io/?EIO=4&transport=polling&t=PYVWpbZ HTTP/1.1" 200 -
+2025-08-12 23:50:34,078 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 23:50:34] "POST /socket.io/?EIO=4&transport=polling&t=PYVWpcP&sid=Ljr8z0qrJvNenTi8AAAA HTTP/1.1" 200 -
+2025-08-12 23:50:34,081 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 23:50:34] "GET /socket.io/?EIO=4&transport=polling&t=PYVWpcR&sid=Ljr8z0qrJvNenTi8AAAA HTTP/1.1" 200 -
+2025-08-12 23:50:34,132 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 23:50:34] "GET /socket.io/?EIO=4&transport=polling&t=PYVWpdH&sid=Ljr8z0qrJvNenTi8AAAA HTTP/1.1" 200 -
+2025-08-12 23:50:34,314 - werkzeug - INFO - 127.0.0.1 - - [12/Aug/2025 23:50:34] "GET /socket.io/?EIO=4&transport=polling&t=PYVWpg9&sid=Ljr8z0qrJvNenTi8AAAA HTTP/1.1" 200 -
+2025-08-12 23:51:32,516 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.46
+2025-08-12 23:51:32,516 - root - INFO -   RSI: HOLD (conf: 0.10)
+2025-08-12 23:51:32,517 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-12 23:52:33,517 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.46
+2025-08-12 23:52:33,518 - root - INFO -   RSI: HOLD (conf: 0.10)
+2025-08-12 23:52:33,518 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-12 23:53:34,209 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.46
+2025-08-12 23:53:34,209 - root - INFO -   RSI: HOLD (conf: 0.10)
+2025-08-12 23:53:34,210 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-12 23:54:35,054 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.44
+2025-08-12 23:54:35,055 - root - INFO -   RSI: HOLD (conf: 0.07)
+2025-08-12 23:54:35,055 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-12 23:55:36,073 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.44
+2025-08-12 23:55:36,073 - root - INFO -   RSI: HOLD (conf: 0.07)
+2025-08-12 23:55:36,074 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-12 23:56:36,765 - root - INFO - Ensemble Analysis: SELL | Confidence: 0.49
+2025-08-12 23:56:36,765 - root - INFO -   RSI: HOLD (conf: 0.14)
+2025-08-12 23:56:36,765 - root - INFO -   MACD: SELL (conf: 1.00)
+2025-08-12 23:57:37,783 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.41
+2025-08-12 23:57:37,783 - root - INFO -   RSI: HOLD (conf: 0.05)
+2025-08-12 23:57:37,784 - root - INFO -   MACD: HOLD (conf: 0.94)
+2025-08-12 23:58:38,466 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.41
+2025-08-12 23:58:38,467 - root - INFO -   RSI: HOLD (conf: 0.05)
+2025-08-12 23:58:38,467 - root - INFO -   MACD: HOLD (conf: 0.94)
+2025-08-13 00:04:39,318 - root - INFO - Starting bot and web server...
+2025-08-13 00:04:39,327 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.8:5000
+2025-08-13 00:04:39,328 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-13 00:04:40,490 - root - INFO - Binance client initialized and connection successful.
+2025-08-13 00:04:41,135 - root - INFO - Retrieved precision for BTCUSDT: 3 decimal places.
+2025-08-13 00:04:41,135 - root - INFO - Bot thread started. Trading BTCUSDT.
+2025-08-13 00:04:41,498 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.43
+2025-08-13 00:04:41,498 - root - INFO -   RSI: HOLD (conf: 0.06)
+2025-08-13 00:04:41,498 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:04:43,545 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2025 00:04:43] "GET / HTTP/1.1" 200 -
+2025-08-13 00:04:43,923 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2025 00:04:43] "GET /socket.io/?EIO=4&transport=polling&t=PYVa35G HTTP/1.1" 200 -
+2025-08-13 00:04:44,002 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2025 00:04:44] "POST /socket.io/?EIO=4&transport=polling&t=PYVa36U&sid=hK2Dyyonjvj-t0_mAAAA HTTP/1.1" 200 -
+2025-08-13 00:04:44,005 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2025 00:04:44] "GET /socket.io/?EIO=4&transport=polling&t=PYVa36W&sid=hK2Dyyonjvj-t0_mAAAA HTTP/1.1" 200 -
+2025-08-13 00:04:44,076 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2025 00:04:44] "GET /socket.io/?EIO=4&transport=polling&t=PYVa37f&sid=hK2Dyyonjvj-t0_mAAAA HTTP/1.1" 200 -
+2025-08-13 00:05:42,194 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.44
+2025-08-13 00:05:42,195 - root - INFO -   RSI: HOLD (conf: 0.06)
+2025-08-13 00:05:42,195 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:06:42,879 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.44
+2025-08-13 00:06:42,879 - root - INFO -   RSI: HOLD (conf: 0.07)
+2025-08-13 00:06:42,879 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:07:43,929 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.44
+2025-08-13 00:07:43,930 - root - INFO -   RSI: HOLD (conf: 0.07)
+2025-08-13 00:07:43,931 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:08:44,906 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.44
+2025-08-13 00:08:44,907 - root - INFO -   RSI: HOLD (conf: 0.07)
+2025-08-13 00:08:44,907 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:09:45,874 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.50
+2025-08-13 00:09:45,874 - root - INFO -   RSI: HOLD (conf: 0.17)
+2025-08-13 00:09:45,874 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:10:46,898 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.41
+2025-08-13 00:10:46,898 - root - INFO -   RSI: HOLD (conf: 0.01)
+2025-08-13 00:10:46,899 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:11:47,864 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.42
+2025-08-13 00:11:47,864 - root - INFO -   RSI: HOLD (conf: 0.04)
+2025-08-13 00:11:47,865 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:12:48,882 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.42
+2025-08-13 00:12:48,883 - root - INFO -   RSI: HOLD (conf: 0.04)
+2025-08-13 00:12:48,884 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:13:49,909 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.40
+2025-08-13 00:13:49,910 - root - INFO -   RSI: HOLD (conf: 0.00)
+2025-08-13 00:13:49,910 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:14:50,580 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.40
+2025-08-13 00:14:50,580 - root - INFO -   RSI: HOLD (conf: 0.00)
+2025-08-13 00:14:50,581 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:15:51,556 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.43
+2025-08-13 00:15:51,556 - root - INFO -   RSI: HOLD (conf: 0.04)
+2025-08-13 00:15:51,557 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:16:52,550 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.43
+2025-08-13 00:16:52,551 - root - INFO -   RSI: HOLD (conf: 0.04)
+2025-08-13 00:16:52,551 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:17:53,273 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.41
+2025-08-13 00:17:53,273 - root - INFO -   RSI: HOLD (conf: 0.02)
+2025-08-13 00:17:53,274 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:18:54,275 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.09
+2025-08-13 00:18:54,276 - root - INFO -   RSI: HOLD (conf: 0.02)
+2025-08-13 00:18:54,276 - root - INFO -   MACD: HOLD (conf: 0.18)
+2025-08-13 00:19:55,305 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.09
+2025-08-13 00:19:55,305 - root - INFO -   RSI: HOLD (conf: 0.02)
+2025-08-13 00:19:55,306 - root - INFO -   MACD: HOLD (conf: 0.18)
+2025-08-13 00:20:56,163 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.26
+2025-08-13 00:20:56,164 - root - INFO -   RSI: HOLD (conf: 0.01)
+2025-08-13 00:20:56,164 - root - INFO -   MACD: HOLD (conf: 0.63)
+2025-08-13 00:21:57,143 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.28
+2025-08-13 00:21:57,143 - root - INFO -   RSI: HOLD (conf: 0.00)
+2025-08-13 00:21:57,143 - root - INFO -   MACD: HOLD (conf: 0.71)
+2025-08-13 00:22:58,136 - root - INFO - Ensemble Analysis: SELL | Confidence: 0.52
+2025-08-13 00:22:58,137 - root - INFO -   RSI: HOLD (conf: 0.20)
+2025-08-13 00:22:58,137 - root - INFO -   MACD: SELL (conf: 1.00)
+2025-08-13 00:23:59,139 - root - INFO - Ensemble Analysis: SELL | Confidence: 0.52
+2025-08-13 00:23:59,140 - root - INFO -   RSI: HOLD (conf: 0.20)
+2025-08-13 00:23:59,140 - root - INFO -   MACD: SELL (conf: 1.00)
+2025-08-13 00:24:59,817 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.44
+2025-08-13 00:24:59,817 - root - INFO -   RSI: HOLD (conf: 0.07)
+2025-08-13 00:24:59,817 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:26:00,989 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.48
+2025-08-13 00:26:00,989 - root - INFO -   RSI: HOLD (conf: 0.13)
+2025-08-13 00:26:00,990 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:27:02,024 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.49
+2025-08-13 00:27:02,025 - root - INFO -   RSI: HOLD (conf: 0.15)
+2025-08-13 00:27:02,025 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:28:02,643 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.49
+2025-08-13 00:28:02,643 - root - INFO -   RSI: HOLD (conf: 0.15)
+2025-08-13 00:28:02,643 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:29:03,358 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.48
+2025-08-13 00:29:03,358 - root - INFO -   RSI: HOLD (conf: 0.14)
+2025-08-13 00:29:03,359 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:30:04,085 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.44
+2025-08-13 00:30:04,085 - root - INFO -   RSI: HOLD (conf: 0.06)
+2025-08-13 00:30:04,085 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:31:05,146 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.12
+2025-08-13 00:31:05,146 - root - INFO -   RSI: HOLD (conf: 0.02)
+2025-08-13 00:31:05,147 - root - INFO -   MACD: BUY (conf: 0.27)
+2025-08-13 00:32:05,938 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.12
+2025-08-13 00:32:05,938 - root - INFO -   RSI: HOLD (conf: 0.02)
+2025-08-13 00:32:05,938 - root - INFO -   MACD: BUY (conf: 0.27)
+2025-08-13 00:33:06,956 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.41
+2025-08-13 00:33:06,957 - root - INFO -   RSI: HOLD (conf: 0.08)
+2025-08-13 00:33:06,957 - root - INFO -   MACD: HOLD (conf: 0.90)
+2025-08-13 00:34:07,680 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.27
+2025-08-13 00:34:07,680 - root - INFO -   RSI: HOLD (conf: 0.02)
+2025-08-13 00:34:07,681 - root - INFO -   MACD: BUY (conf: 0.64)
+2025-08-13 00:35:08,861 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.41
+2025-08-13 00:35:08,861 - root - INFO -   RSI: HOLD (conf: 0.02)
+2025-08-13 00:35:08,861 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:36:09,910 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.41
+2025-08-13 00:36:09,910 - root - INFO -   RSI: HOLD (conf: 0.02)
+2025-08-13 00:36:09,911 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:37:10,601 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.41
+2025-08-13 00:37:10,601 - root - INFO -   RSI: HOLD (conf: 0.02)
+2025-08-13 00:37:10,601 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:38:11,597 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.42
+2025-08-13 00:38:11,598 - root - INFO -   RSI: HOLD (conf: 0.03)
+2025-08-13 00:38:11,598 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:39:12,643 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.42
+2025-08-13 00:39:12,643 - root - INFO -   RSI: HOLD (conf: 0.03)
+2025-08-13 00:39:12,644 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:40:13,666 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.09
+2025-08-13 00:40:13,667 - root - INFO -   RSI: HOLD (conf: 0.14)
+2025-08-13 00:40:13,667 - root - INFO -   MACD: SELL (conf: 0.01)
+2025-08-13 00:41:14,384 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.43
+2025-08-13 00:41:14,385 - root - INFO -   RSI: HOLD (conf: 0.04)
+2025-08-13 00:41:14,386 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:42:15,365 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.44
+2025-08-13 00:42:15,366 - root - INFO -   RSI: HOLD (conf: 0.07)
+2025-08-13 00:42:15,366 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:43:16,409 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.44
+2025-08-13 00:43:16,410 - root - INFO -   RSI: HOLD (conf: 0.07)
+2025-08-13 00:43:16,410 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:44:17,437 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.43
+2025-08-13 00:44:17,437 - root - INFO -   RSI: HOLD (conf: 0.05)
+2025-08-13 00:44:17,437 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:45:18,402 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.43
+2025-08-13 00:45:18,402 - root - INFO -   RSI: HOLD (conf: 0.05)
+2025-08-13 00:45:18,403 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:46:19,368 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.43
+2025-08-13 00:46:19,368 - root - INFO -   RSI: HOLD (conf: 0.05)
+2025-08-13 00:46:19,370 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:47:20,329 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.45
+2025-08-13 00:47:20,329 - root - INFO -   RSI: HOLD (conf: 0.08)
+2025-08-13 00:47:20,329 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:48:21,315 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.47
+2025-08-13 00:48:21,316 - root - INFO -   RSI: HOLD (conf: 0.12)
+2025-08-13 00:48:21,316 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:49:22,006 - root - INFO - Ensemble Analysis: SELL | Confidence: 0.48
+2025-08-13 00:49:22,006 - root - INFO -   RSI: HOLD (conf: 0.25)
+2025-08-13 00:49:22,007 - root - INFO -   MACD: SELL (conf: 0.83)
+2025-08-13 00:50:22,675 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.45
+2025-08-13 00:50:22,675 - root - INFO -   RSI: HOLD (conf: 0.08)
+2025-08-13 00:50:22,675 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:51:23,346 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.45
+2025-08-13 00:51:23,347 - root - INFO -   RSI: HOLD (conf: 0.08)
+2025-08-13 00:51:23,347 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:52:24,032 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.46
+2025-08-13 00:52:24,032 - root - INFO -   RSI: HOLD (conf: 0.10)
+2025-08-13 00:52:24,032 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:53:25,046 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.47
+2025-08-13 00:53:25,047 - root - INFO -   RSI: HOLD (conf: 0.11)
+2025-08-13 00:53:25,047 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:54:26,003 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.47
+2025-08-13 00:54:26,004 - root - INFO -   RSI: HOLD (conf: 0.11)
+2025-08-13 00:54:26,004 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:55:26,990 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.46
+2025-08-13 00:55:26,991 - root - INFO -   RSI: HOLD (conf: 0.09)
+2025-08-13 00:55:26,991 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:56:28,029 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.50
+2025-08-13 00:56:28,029 - root - INFO -   RSI: HOLD (conf: 0.16)
+2025-08-13 00:56:28,029 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 00:57:28,721 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.39
+2025-08-13 00:57:28,722 - root - INFO -   RSI: HOLD (conf: 0.05)
+2025-08-13 00:57:28,722 - root - INFO -   MACD: HOLD (conf: 0.89)
+2025-08-13 00:58:29,719 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.39
+2025-08-13 00:58:29,719 - root - INFO -   RSI: HOLD (conf: 0.05)
+2025-08-13 00:58:29,719 - root - INFO -   MACD: HOLD (conf: 0.89)
+2025-08-13 00:59:30,713 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.38
+2025-08-13 00:59:30,714 - root - INFO -   RSI: HOLD (conf: 0.15)
+2025-08-13 00:59:30,714 - root - INFO -   MACD: SELL (conf: 0.72)
+2025-08-13 01:00:31,721 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.41
+2025-08-13 01:00:31,722 - root - INFO -   RSI: HOLD (conf: 0.02)
+2025-08-13 01:00:31,722 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 01:01:32,707 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.41
+2025-08-13 01:01:32,707 - root - INFO -   RSI: HOLD (conf: 0.02)
+2025-08-13 01:01:32,707 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 01:02:33,700 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.41
+2025-08-13 01:02:33,700 - root - INFO -   RSI: HOLD (conf: 0.02)
+2025-08-13 01:02:33,700 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 01:03:34,697 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.05
+2025-08-13 01:03:34,698 - root - INFO -   RSI: HOLD (conf: 0.07)
+2025-08-13 01:03:34,698 - root - INFO -   MACD: BUY (conf: 0.03)
+2025-08-13 01:04:35,712 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.43
+2025-08-13 01:04:35,713 - root - INFO -   RSI: HOLD (conf: 0.05)
+2025-08-13 01:04:35,714 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 01:05:36,404 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.45
+2025-08-13 01:05:36,404 - root - INFO -   RSI: HOLD (conf: 0.09)
+2025-08-13 01:05:36,404 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 01:06:37,420 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.45
+2025-08-13 01:06:37,421 - root - INFO -   RSI: HOLD (conf: 0.09)
+2025-08-13 01:06:37,422 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 01:07:38,396 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.46
+2025-08-13 01:07:38,397 - root - INFO -   RSI: HOLD (conf: 0.10)
+2025-08-13 01:07:38,397 - root - INFO -   MACD: HOLD (conf: 1.00)
+2025-08-13 01:08:39,400 - root - INFO - Ensemble Analysis: HOLD | Confidence: 0.46
+2025-08-13 01:08:39,401 - root - INFO -   RSI: HOLD (conf: 0.10)
+2025-08-13 01:08:39,402 - root - INFO -   MACD: HOLD (conf: 1.00)

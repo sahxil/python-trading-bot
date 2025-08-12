@@ -2,3 +2,5 @@ python-binance
 pandas
 pandas-ta
 python-dotenv
+Flask
+Flask-SocketIO

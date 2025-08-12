@@ -10,18 +10,21 @@ An intelligent, production-ready cryptocurrency trading bot with advanced risk m
 ## 🎯 Features
 
 ### Core Trading Engine
+
 - **Autonomous Operation**: Fully automated trading with continuous market monitoring
 - **Multi-Strategy Framework**: RSI, MACD, and ensemble strategy support
 - **Advanced Risk Management**: Stop-loss, take-profit, position sizing, daily loss limits
 - **Real-time Position Tracking**: Comprehensive P&L monitoring with unrealized gains
 
 ### Professional Infrastructure
+
 - **Production-Ready Logging**: Structured logging with file and console output
 - **Environment-Based Configuration**: Secure API key management
 - **Comprehensive Error Handling**: Graceful handling of API failures and network issues
 - **Multi-Channel Notifications**: Discord, Telegram, Email alerts
 
 ### Analytics & Monitoring
+
 - **Live Performance Dashboard**: Real-time web interface with charts
 - **Advanced Backtesting**: Historical strategy performance analysis
 - **Risk Metrics**: Sharpe ratio, maximum drawdown, volatility tracking
@@ -96,16 +99,19 @@ python main.py --dashboard
 ## 📊 Performance Monitoring
 
 ### Real-time Dashboard
+
 Access the live dashboard at `http://localhost:8000` when running with `--dashboard` flag.
 
 Features:
+
 - Live P&L tracking
-- RSI indicator visualization  
+- RSI indicator visualization
 - Recent trades log
 - Risk metrics display
 - Strategy confidence scores
 
 ### Backtesting Results
+
 ```
 BACKTESTING REPORT
 ==================================================
@@ -121,16 +127,19 @@ SUMMARY METRICS:
 ## 🛡️ Risk Management
 
 ### Position Sizing
+
 - Dynamic position sizing based on account balance
 - Maximum 2% risk per trade (configurable)
 - Account for slippage and commission costs
 
 ### Stop Loss & Take Profit
+
 - Automatic stop-loss at 1% loss (configurable)
 - Take profit at 2% gain (configurable)
 - Trailing stops for profitable positions
 
 ### Daily Limits
+
 - Maximum 5% daily loss limit
 - Trade frequency controls
 - Emergency shutdown capabilities
@@ -138,16 +147,19 @@ SUMMARY METRICS:
 ## 🔧 Strategy Framework
 
 ### RSI Strategy
+
 - 14-period RSI with 70/30 overbought/oversold levels
 - Confidence scoring based on RSI extremes
 - Adaptive thresholds based on market volatility
 
-### MACD Strategy  
+### MACD Strategy
+
 - 12/26/9 MACD with signal line crossovers
 - Histogram divergence analysis
 - Momentum confirmation filters
 
 ### Ensemble Approach
+
 - Weighted voting system across strategies
 - Confidence-based signal filtering
 - Minimum threshold requirements for trade execution
@@ -155,6 +167,7 @@ SUMMARY METRICS:
 ## 📈 Advanced Features
 
 ### Multi-Timeframe Analysis
+
 ```python
 # Analyze multiple timeframes for stronger signals
 timeframes = ['1m', '5m', '15m']
@@ -162,18 +175,20 @@ signals = bot.analyze_multi_timeframe(symbol, timeframes)
 ```
 
 ### Custom Strategy Development
+
 ```python
 class MyStrategy(TradingStrategy):
     def generate_signal(self, df: pd.DataFrame) -> str:
         # Your custom logic here
         return 'BUY' | 'SELL' | 'HOLD'
-    
+
     def get_confidence(self, df: pd.DataFrame) -> float:
         # Return confidence score 0-1
         return confidence_score
 ```
 
 ### Webhook Integration
+
 ```python
 # Receive signals from TradingView or other platforms
 @app.route('/webhook', methods=['POST'])
@@ -185,12 +200,14 @@ def handle_webhook():
 ## 🚨 Notifications
 
 ### Alert Types
+
 - **Trade Executions**: Buy/sell confirmations with P&L
 - **Signal Alerts**: Strategy signals with confidence scores
 - **Risk Alerts**: Stop-loss triggers, daily limit breaches
 - **System Alerts**: API errors, connection issues
 
 ### Channels
+
 - **Discord**: Real-time trading alerts with rich embeds
 - **Telegram**: Mobile notifications with inline keyboards
 - **Email**: Detailed reports and critical alerts
@@ -199,16 +216,19 @@ def handle_webhook():
 ## 🧪 Testing & Validation
 
 ### Unit Tests
+
 ```bash
 pytest tests/ -v --cov=bot
 ```
 
 ### Integration Tests
+
 ```bash
 pytest tests/integration/ -v
 ```
 
 ### Strategy Validation
+
 ```bash
 python -m backtesting.validate_strategies --days=90
 ```
@@ -225,3 +245,4 @@ matplotlib>=3.5.0       # Plotting (backtesting)
 flask>=2.0.0           # Dashboard server
 python-dotenv>=0.19.0   # Environment management
 pytest>=7.0.
+```
