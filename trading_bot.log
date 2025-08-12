@@ -7,3 +7,60 @@
 2025-08-12 21:31:51,549 - root - INFO - Binance client initialized and connection successful.
 2025-08-12 21:31:51,549 - root - INFO - Placing LIMIT order with params: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 4000.0, 'timeInForce': 'GTC'}
 2025-08-12 21:31:52,051 - root - ERROR - Failed to place order. API Error: APIError(code=-4024): Limit price can't be lower than 4018.64.
+2025-08-12 22:42:37,709 - root - INFO - Binance client initialized and connection successful.
+2025-08-12 22:42:37,710 - root - INFO - Bot started. Trading BTCUSDT with a quantity of 0.001.
+2025-08-12 22:42:38,207 - root - INFO - Latest RSI value: 49.05
+2025-08-12 22:42:38,208 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:42:38,208 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:43:38,704 - root - INFO - Latest RSI value: 49.05
+2025-08-12 22:43:38,704 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:43:38,705 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:44:38,889 - root - INFO - Latest RSI value: 52.96
+2025-08-12 22:44:38,889 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:44:38,889 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:45:39,086 - root - INFO - Latest RSI value: 51.60
+2025-08-12 22:45:39,086 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:45:39,086 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:46:39,600 - root - INFO - Latest RSI value: 51.60
+2025-08-12 22:46:39,601 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:46:39,602 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:47:39,803 - root - INFO - Latest RSI value: 46.15
+2025-08-12 22:47:39,804 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:47:39,804 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:48:40,324 - root - INFO - Latest RSI value: 46.15
+2025-08-12 22:48:40,325 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:48:40,325 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:49:40,845 - root - INFO - Latest RSI value: 54.42
+2025-08-12 22:49:40,846 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:49:40,846 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:50:41,380 - root - INFO - Latest RSI value: 54.08
+2025-08-12 22:50:41,381 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:50:41,381 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:51:41,628 - root - INFO - Latest RSI value: 47.38
+2025-08-12 22:51:41,629 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:51:41,629 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:52:42,144 - root - INFO - Latest RSI value: 47.38
+2025-08-12 22:52:42,144 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:52:42,144 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:53:42,345 - root - INFO - Latest RSI value: 52.10
+2025-08-12 22:53:42,346 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:53:42,347 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:54:42,553 - root - INFO - Latest RSI value: 52.71
+2025-08-12 22:54:42,555 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:54:42,556 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:55:43,060 - root - INFO - Latest RSI value: 52.55
+2025-08-12 22:55:43,061 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:55:43,061 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:56:43,269 - root - INFO - Latest RSI value: 45.89
+2025-08-12 22:56:43,269 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:56:43,270 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:57:43,459 - root - INFO - Latest RSI value: 45.89
+2025-08-12 22:57:43,459 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:57:43,460 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:58:43,971 - root - INFO - Latest RSI value: 55.33
+2025-08-12 22:58:43,972 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:58:43,972 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 22:59:44,454 - root - INFO - Latest RSI value: 52.22
+2025-08-12 22:59:44,454 - root - INFO - Current Signal: HOLD | In Position: False
+2025-08-12 22:59:44,454 - root - INFO - -------------------- Waiting for next cycle --------------------
+2025-08-12 23:00:06,388 - root - INFO - Bot stopped by user.
