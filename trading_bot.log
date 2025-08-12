@@ -1,0 +1,9 @@
+2025-08-12 21:30:09,578 - root - INFO - Binance client initialized and connection successful.
+2025-08-12 21:30:09,579 - root - INFO - Placing MARKET order: BUY 0.001 BTCUSDT
+2025-08-12 21:30:10,113 - root - INFO - Order placed successfully.
+2025-08-12 21:30:10,113 - root - INFO - --- Order Result ---
+2025-08-12 21:30:10,113 - root - INFO - Full response: {'orderId': 5574314858, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJccba43b3f2eef5dd9b99f1', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1755014409973}
+2025-08-12 21:30:10,114 - root - INFO - --------------------
+2025-08-12 21:31:51,549 - root - INFO - Binance client initialized and connection successful.
+2025-08-12 21:31:51,549 - root - INFO - Placing LIMIT order with params: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 4000.0, 'timeInForce': 'GTC'}
+2025-08-12 21:31:52,051 - root - ERROR - Failed to place order. API Error: APIError(code=-4024): Limit price can't be lower than 4018.64.
